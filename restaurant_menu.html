@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thai Restaurant</title>
+        <link rel="icon" type="image/png" href="https://png.pngtree.com/png-vector/20191018/ourmid/pngtree-thailand-icon-circle-png-image_1817276.jpg">
+    </head>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        ol{
+            list-style: none;
+            line-height: 2;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: #e5dcca;
+            color: black;
+            padding: 10px;
+        }
+        #header-img{
+            width: 50px;
+            height: 50px;
+        }
+        header a{
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+        }
+        .header-left{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        nav li a:hover{
+            background-color: yellow;
+        }
+        article{
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        article img{
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        #order-form{
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        #menu1{
+            background-color: azure;
+        }
+        #menu2{
+            background-color: aliceblue
+        }
+        #menu3{
+            background-color: floralwhite;
+        }
+        footer{
+            background-color: cadetblue;
+            text-align: center;
+            padding: 2px;
+        }
+        footer a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+    <body>
+        <header>
+            <div class="header-left">
+                <a href="#"><img id="header-img" class="logo" src="https://img.freepik.com/premium-vector/restaurant-food-drink-logo-design_807399-1197.jpg?semt=ais_hybrid&w=740" alt="restaurant-logo"></a>
+                <h1 style="margin-left: 10px;">Thai Restaurant</h1>
+            </div>
+            <hr />
+            <nav>
+                <ol>
+                    <li><a href="#menulist">Menu</a></li>
+                    <li><a href="#order-form">Place Order</a></li>
+                </ol>
+            </nav>
+        </header>
+        <main>
+            <section id="menulist">
+                <h2 style="background-color: whitesmoke; width: 100%; padding: 10px">Menu</h2>
+                <hr /><br />
+                <article id="menu1">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiFy8_Jl5LqIqbDFOmajJtmmP9A7l_SeqPdWyIJjVIMYc0mTWj5UEDF8aDygH-iU8xtxGGk-aROw_l-FnD0JiIPoeazC7uCBqxt7eXX3M" alt="tomyumkung" title="Tomyumkung">
+                    <h3>#1 Tomyumkung <span style="color: red">(Best seller!!!)</h3></span>
+                    <p>A well-known Thai hot and sour soup, Tom Yum Kung is made of shrimp, lemongrass, galangal, kaffir lime leaves, lime juice, fish sauce, and chili. It is well known for having a strong, hot, and pungent flavor that symbolizes Thai cuisine.
+                    <span style="color: red"><i>(Price: 150 Baht/4.34 USD)</i></span>
+                    </p>
+                </article>
+                <article id="menu2">
+                    <img src="https://www.eatingwell.com/thmb/X8n8s2xKfmMf9qUJj1WtCatbacc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/EWL-shrimp-pad-thai-step-05-1190-87e6eec4f9ec48f288489d7f06ea01fc.jpg" alt="padthai" title="Padthai">
+                    <h3>#2 Padthai <span style="color: blue">(Should Try!!!)</h3></span>
+                    <p>Prepared with rice noodles, eggs, shrimp or tofu, bean sprouts, and peanuts, pad Thai is one of the favorite Thai stir-fried noodle dishes that has a flavor out of lime, fish sauce, and tamarind sauce.  Locals and tourists alike prefer it because it provides an ideal combination of savory, salty, sour, and sweet flavor.
+                    <br /><span style="color: blue"><i>(Price: 60 Baht/1.74 USD).</i></span>
+                    </p>
+                </article>
+                <article id="menu3">
+                    <img src="https://www.allrecipes.com/thmb/dGUxVcAkDO91Cstmjdiux0cW-Ow=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Som-Tam-Malakor-Green-Papaya-Salad-2000-ec87b4dcd85041c991d11ec6a1ab5f30.jpg" alt="somtamthai" title="Somtam Thai">
+                    <h3>#3 Somtamthai <span style="color: green">(Spicy Meal!!!)</h3></span>
+                    <p>Spicy and sour, som tam (Thai papaya salad) is made up of shredded green papaya, fish sauce, lime juice, peanuts, garlic, and chili. The northeastern part of Thailand is renowned for its strong flavors and texture of this dish.
+                    <span style="color: green"><span><i>(Price: 70 Baht/2.03 USD).</i></span>
+                    </p>
+                </article>
+            </section>
+            <section id="order-form">
+                <h2 style="background-color: whitesmoke; width: 100%; padding: 10px">Place Your order</h2>
+                <hr />
+                <form action="" method="dialog">
+                    <label>Choose Menu Items: <input type="number" min="0" max="3" style="width:5%" required><br/></label>
+                    <label>Sides:<br/>
+                        <input type="checkbox">Sticky Rice (+138 Baht/4 USD)<br />
+                        <input type="checkbox">Haaw Mohk (+100 Baht/2.90 USD)<br />
+                        <input type="checkbox">Phat Phrik Khing (+40 Baht/1.16 USD)<br /> 
+                    </label>
+                    <label>Add Ons:<br />
+                        <input type="checkbox">Pepsi (+26 Baht/0.75 USD)<br/>
+                        <input type="checkbox">Coke (+26 Baht/0.75 USD)</br>
+                        <input type="checkbox">Rice (+10 Baht/0.29 USD)</br> 
+                    </label>
+                    <label>Special Requests:<br/>
+                        <textarea cols="42" rows="6" placeholder="write anything you want." style="max-width: 100%;"></textarea>
+                    </label>
+                    <br />
+                    <input type="submit" value="Go To Checkout" style="background-color:greenyellow; border-radius:1px" required>
+                </form>
+            </section>
+        </main>
+        <br />
+        <footer>
+            <p>Made with love by <br/><a href="https://www.codedex.io/@MRPROPZ">SARUNWIT NONTASEAN</a></p>
+        </footer>
+    </body>
+</html>
